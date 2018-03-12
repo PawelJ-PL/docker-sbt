@@ -18,4 +18,6 @@ WORKDIR /home/sbt
 
 RUN sbt clean
 
+RUN rm -r /home/sbt/project && rm -r /home/sbt/target
+
 CMD ["sbt"]
